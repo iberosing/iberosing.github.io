@@ -47,6 +47,19 @@
   			new JCaption('img.caption');
   		});
   </script>
+  <script type="text/javascript">
+  $(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+  });
+  </script>
 </head>
 
 <! ----------------------------- HEAD ----------------------------- >
@@ -95,6 +108,10 @@
           <img src="new-icon.jpg" height=20px><b>PhD course on "Mixed Hodge Structures on Alexander Modules" </b> (from October 26th to December 2nd, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf4poRJjbVBwh9Y2DuQkiTbUhCrERRRsvVITs7pzt8B7GYOA/viewform?usp=sf_link" target="_blank"><b>Registration is now open</b></a>).
       </div><br></br><br></br>
       -->
+      <div><h3>Events:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="new-icon.jpg" height=20px><b>IberoSing "Special Summer Edition", June 23th-25th, 17h-19h30 (GMT+2, CEST).</b> TBA.
+      </div><br></br><br></br>
 
 
 
@@ -160,16 +177,16 @@
 
       <! --------TALK-------- ->
       <tr>
-      <td class="odd" width="15%">
+      <td class="" width="15%">
         <b> 19 May 2021</b> at <b>17h</b>
       </td>
-      <td class="odd" width="25%">
+      <td class="" width="25%">
         <b><a href="https://sites.google.com/site/nguyenxvnhan/home" target="_blank">
             Nhan Nguyen
         </a></b><br>
         Basque Center for Applied Mathematics (Bilbao, Spain)
       </td>
-      <td class="odd" width="60%">
+      <td class="" width="60%">
         <b>
             Link criterion for Lipschitz normal embedding of definable sets
         </b>
@@ -226,16 +243,16 @@
 
       <! --------TALK-------- ->
       <tr>
-      <td class="odd" width="15%">
+      <td class="" width="15%">
         <b> 2 June 2021</b> at <b>17h</b>
       </td>
-      <td class="odd" width="25%">
+      <td class="" width="25%">
         <b><a href="https://www.researchgate.net/profile/F-Tari-2" target="_blank">
             Farid Tari
         </a></b><br>
         ICMC-USP (São Carlos, Brazil)
       </td>
-      <td class="odd" width="60%">
+      <td class="" width="60%">
         <b>
             On k-folding map-germs and hidden symmetries of surfaces in the Euclidean 3-space II
         </b>
@@ -292,16 +309,16 @@
 
       <! --------TALK-------- ->
       <tr>
-      <td class="odd" width="15%">
+      <td class="" width="15%">
         <b> 16 June 2021</b> at <b>17h</b>
       </td>
-      <td class="odd" width="25%">
+      <td class="" width="25%">
         <b><a href="https://iberosing.github.io/" target="_blank">
             TBA
         </a></b><br>
         ( )
       </td>
-      <td class="odd" width="60%">
+      <td class="" width="60%">
         <b>
             TBA
         </b>
@@ -361,6 +378,86 @@
       </div>
       <br></br><br></br>
 
+
+      <! ------------- Special Summer Edition------------- >
+      <div><h2>IberoSing <span style="color: blue">Special Summer Edition</span> 2021</h2>
+    <center>
+      <table  class="hor-zebra" cellspacing="2" cellpadding="3" border="1">
+      <thead>
+        <tr>
+          <th style="" bgcolor=""><div align="center"></div></th>
+          <th style="" bgcolor=""><div align="center">June 23</div></th>
+          <th style="" bgcolor=""><div align="center">June 24</div></th>
+        <th style="" bgcolor=""><div align="center">June 25</div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td width="5%"><div align="center"><b>17:00-18:00</b></div></td>
+          <td><div align="center"><a title=" " href="#rond"><b>Guillaume Rond</b></a></div></td>
+          <td><div align="center"><a title=" " href="#Gryzska"><b>Beata Gryzska</b></a></div></td>
+        <td><div align="center"><a title=" " href="#Chiu"><b>Christopher Heng Chiu</b></a></div></td>
+           </tr>
+       <tr>
+         <td class="odd" width="5%"><div align="center"></div></td>
+         <td class="odd"><div align="center">Break/Discussion</div></td>
+         <td class="odd"><div align="center">Break/Discussion</div></td>
+         <td class="odd"><div align="center">Break/Discussion</div></td>
+       </tr>
+        <tr>
+          <td width="10%"><div align="center"><b>18:15-19:15</b></div></td>
+          <td><div align="center"><a title=" " href="#manuel"><b>Manuel Gonzalez Villa</b></a></div></td>
+          <td><div align="center"><a title=" " href="#giles"><b>Arturo Giles Flores</b></a></div></td>
+        <td><div align="center"><a title=" " href="#seade"><b>Daniel Duarte</b></a></div></td>
+        </tr>
+        <tr>
+          <td class="odd" width="5%"><div align="center"></div></td>
+          <td class="odd"><div align="center">Break/Discussion</div></td>
+          <td class="odd"><div align="center">Break/Discussion</div></td>
+          <td class="odd"><div align="center">Break/Discussion</div></td>
+        </tr>
+        <tr>
+          <td width="10%"><div align="center"><b>19:30-20:30</b></div></td>
+          <td><div align="center"><a title=" " href="#Starkson"><b> 	Laura Starkson</b></a></div></td>
+          <td><div align="center"><a title=" " href="#schurmann"><b>TBA</b></a></div></td>
+        <td><div align="center">
+          <a class="trigger_popup_fricc">TBA</a>
+          <div class="hover_bkgr_fricc">
+              <span class="helper"></span>
+              <div align="left">
+                  <div class="popupCloseButton">&times;</div>
+                  <b><a href="https://iberosing.github.io/" target="_blank">
+                      Speaker TBA
+                  </a></b><br>
+                  University of TBA (Country TBA)
+                  <br></br>
+                  <b>
+                      Title
+                  </b>
+                  <div class="vis">Abstract↴</div>
+                  <div class="hid">
+                  <p>In the works [1] and [2] we develope a new metric algebraic topology, called the Moderately Discontinuous Homology and Homotopy in the context of subanalytic germs in R^n (with a supplementary metric structure) that satisfies the analogues of the usual theorems in Algebraic Topology: long exact sequences, relatv case, Mayer Vietoris, Seifert van Kampen for special coverings...</p>
+                  <p>This theory captures bilipschitz information, or in other words, quasi isometric invariants. The typical examples to which it applies are subalaytic germs with the inner metric  (the length metric induced by the euclidean metric) and with the outer metric (the restriction of the euclidean metric).</p>
+                  <p>A subanalytic germ is topologically a cone over its link and the moderately discontinuous theory captures the different speeds, with respect to the distance to the origin, in which the topology of the lik collapses towards the origin.</p>
+                  <p>In this talk, I will present the most important concepts in the theory and some results or applications that we got until the present.</p>
+                  <p>References:</br>
+
+                  [1] (with J. Fernández de Bobadilla, S. Heinze, E. Sampaio)  Moderately discontinuous homology. To appear in  Comm. Pure App. Math..
+                  Available in arXiv: 1910.12552 ou sur https://arxiv.org/pdf/1910.12552.pdf</br>
+
+                  [2] (with J. Fernández de Bobadilla, S. Heinze) Moderately discontinuous homotopy.
+                  Submitted. Available in ArXiv:2007.01538 or in  https://arxiv.org/pdf/2007.01538.pdf</p>
+                  </div>
+                  </div>
+          </div>
+        </div></td>
+        </tr>
+
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <br></br><br></br>
 
 
       <!--------NEXT SEMESTER---------->
