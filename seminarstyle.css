@@ -50,6 +50,11 @@ a{
 	color:#457b9d;
 	}
 
+button{
+  	color:#457b9d;
+    font-size: 15px;
+  }
+
 
 ol {
 	counter-reset: o-counter 9; /*Num total de articulos*/
@@ -383,3 +388,54 @@ table.hor-zebra>tbody>tr:hover td {
     font-weight: bold;
 }
 /* Popup box BEGIN */
+
+.open_popup{
+  cursor: pointer;
+  /* font-size: 20px;
+  margin: 20px;
+  display: inline-block;*/
+  font-weight: bold;
+}
+.popup_body{
+  display:none;
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+}
+.popup_body_show{
+  display:block;
+}
+.popup_back{
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  left:0;right:0;top:0;bottom:0;
+}
+.popup_contain{
+  position:relative;
+  background-color: #f3f3f3;
+  box-shadow: 10px 10px 60px #555;
+  border-radius: 8px;
+  height: auto;
+  width: 40%;
+  margin:100px auto 50px;
+  min-height:150px;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 15px;
+}
+.popup_close{
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
