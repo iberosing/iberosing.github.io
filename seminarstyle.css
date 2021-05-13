@@ -16,7 +16,7 @@
 */
 
 body,th, td {
-	font-size: 13px;
+	font-size: 15px;
     background-color: #93B1C6;
     background-image: url("back.png");
     background-repeat: repeat;
@@ -52,7 +52,8 @@ a{
 
 button{
   	color:#457b9d;
-    font-size: 15px;
+    font-size: inherit;
+		background-color: transparent;
   }
 
 
@@ -95,20 +96,20 @@ p.abs {
 
 #contenedor{
 	text-align:justify;
-	width:1000px;
+	width:1200px;
 	margin:auto;
 	}
 
 #cabecera{
 	float:left;
-	width:1000px;/*1000px*/
+	width:1200px;/*1000px*/
 	display:inline;
 	text-align:justify;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	height: 10px;	/*150px*/
 	background-image: url("");
-	background-size: 1000px;
+	background-size: 1500px;
 	position: relative;
 	background-repeat: no-repeat;
 	}
@@ -127,7 +128,7 @@ p.abs {
 
 #main{
 	float:left;
-	width:1000px;
+	width:1200px;
 	background-color: #F5F5F5; /*#f2f3ec*/
 	}
 
@@ -136,7 +137,7 @@ p.abs {
 	padding:1em;
 	text-indent:0px;
 	font-family:  Helvetica, sans-serif; /*Tahoma, Geneva, sans-serif; */ /* sans-serif, Courier New*/
-	font-size: 14px;
+	font-size: 15px;
 	color: #393B3D;
 	overflow:auto;
     min-height: 250px;
@@ -146,7 +147,7 @@ p.abs {
 #main h1{
 	/*text-transform:uppercase;*/
 	text-indent:0px;
-	font-size: 25px;
+	font-size: 30px;
 	font-family: Tahoma; /* Courier New*/
 	color: #1d3557;
 	font-weight: bold;
@@ -155,7 +156,7 @@ p.abs {
 	}
 
 #main h2{
-	font-size: 18px;
+	font-size: 20px;
 	color: #393B3D;
 	font-weight: bold;
     text-align: center;
@@ -163,7 +164,7 @@ p.abs {
     }
 
 #main h3{
-	font-size: 16px;
+	font-size: 18px;
 	color: #393B3D;
 	font-weight: bold;
     text-align: justify;
@@ -214,7 +215,7 @@ form{
 }
 
 #main .contenido .slides{
-	font-size:14px;
+	font-size: 15px;
 	color:red;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -239,7 +240,7 @@ form{
   background-color: white;
   margin: 0px 10px 10px 0px;
   padding: 5px 10px 2px 10px;
-  font-size:13px;
+  font-size: 15px;
   text-align: justify;
   color: gray;
   border: 1px solid #cccccc;
@@ -249,7 +250,7 @@ form{
 #main .visible>div.vis {
   display:block;
   overflow:auto;
-  font-size:13px;
+  font-size: 15px;
   color: grey;
   margin: 5px 0px 0px 0px;
   text-align:left;
@@ -259,7 +260,7 @@ form{
 div.vis {
   display:block;
   overflow:auto;
-  font-size:13px;
+  font-size: 15px;
   color: grey;
   margin: 5px 0px 0px 0px;
   text-align:left;
@@ -271,7 +272,7 @@ div.hid {
   background-color: white;
   margin: 0px 10px 10px 0px;
   padding: 5px 10px 2px 10px;
-  font-size:13px;
+  font-size: 15px;
   text-align: justify;
   color: gray;
   border: 1px solid #cccccc;
@@ -418,9 +419,9 @@ table.hor-zebra>tbody>tr:hover td {
   width: 40%;
   margin:100px auto 50px;
   min-height:150px;
-  padding: 10px 20px;
+  padding: 20px 10px 10px 20px;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
 }
 .popup_close{
   background-color: #fff;
