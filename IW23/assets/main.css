@@ -177,7 +177,7 @@ ul.articles {
 
 
 /* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
     h2{font-size:3.00em;}
     h3{font-size:2.00em;}
     h4{font-size:1.50em;}
@@ -189,7 +189,7 @@ ul.articles {
     .banner { margin-bottom: -0.4em;}
     .item-navegacion {font-size:1.3em;}
     .item-navegacion-mark {font-size:1.3em;}
-    table.organizers{width:1000px; font-size: 0.9em; }
+    table.organizers{width:900px; font-size: 0.9em; }
     td.organizer{white-space:nowrap; width:90%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
     td.organizer img{width: 100%; padding:0 0 20px 0;}
     ul.articles{font-size:1.5em;line-height:2em;}
