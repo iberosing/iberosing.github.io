@@ -189,7 +189,7 @@ ul.articles {
     .banner { margin-bottom: -0.4em;}
     .item-navegacion {font-size:1.3em;}
     .item-navegacion-mark {font-size:1.3em;}
-    table.organizers{width:900px; font-size: 0.9em; }
+    table.organizers{width:900px; font-size: 1.2em; }
     td.organizer{white-space:nowrap; width:90%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
     td.organizer img{width: 100%; padding:0 0 20px 0;}
     ul.articles{font-size:1.5em;line-height:2em;}
@@ -206,7 +206,7 @@ div.vis {
   font-size:1em;
   line-height: 20px;
   color: grey;
-  margin: 10px 0px 5px 0px;
+  margin: 10px 0px 5px 10px;
   text-align:left;
   font-weight:bold;
 }
@@ -214,7 +214,7 @@ div.vis {
 div.hid {
   display:block;
   background-color: white;
-  margin: 0px 50px 10px 0px;
+  margin: 0px 10px 10px 10px;
   padding: 0px 10px 0px 10px;
   font-size: 1em;
   text-align: justify;
