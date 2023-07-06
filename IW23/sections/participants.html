@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+
 <html lang='en'>
 
 <head>
-    <base href="..">
+    <base href=".">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
         <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
     </script>
-    <script type="text/javascript" src="csi.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -29,10 +29,43 @@
                 <a  href="sections/map.html">Map</a>
             </td>
             <td class="navigation">
+                <a  href="sections/usinfo.html">Usinfo</a>
+            </td>
+            <td class="navigation">
                 <a   href="sections/participants.html">Participants</a>
             </td>
         </tr>
     </table>-->
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+  });
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $(".open_popup").click(function () {
+    $(this).parent(".popup_main").children(".popup_body").addClass("popup_body_show");
+        });
+      $(".popup_close").click(function () {
+        $(".popup_body").removeClass("popup_body_show");
+        });
+      $(".popup_back").click(function () {
+        $(".popup_body").removeClass("popup_body_show");
+        });
+  });
+  </script>
     <title>IberoSing International Workshop 2023: Mirror symmetry & Hodge ideals</title>
 </head>
 
@@ -43,16 +76,16 @@
     <!-- Barra de navegación -->
     <nav class="barra-navegacion">
       <!-- Ítems de navegación -->
-      <a href="index.html" class="item-navegacion">About</a>
+      <a href="index.html" class="item-navegacion-mark">About</a>
       <a href="sections/registration.html" class="item-navegacion" style="color: yellow">Registration</a>
       <a href="sections/program.html" class="item-navegacion">Program</a>
       <a href="sections/map.html" class="item-navegacion">How to arrive</a>
-      <a href="sections/participants.html" class="item-navegacion-mark">Participants & Photos</a>
+      <a href="sections/usinfo.html" class="item-navegacion">Useful Information</a>  
+      <a href="sections/participants.html" class="item-navegacion">Participants & Photos</a>
     </nav>
     <div class="title">
         IberoSing International Workshop 2023: Mirror symmetry & Hodge ideals <br> 06-10 November, 2023  <br> Universidad de Granada (Spain)
     </div>
-
 
     <h2>List of participants</h2>
     <p style="text-indent:100px;">
