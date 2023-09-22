@@ -27,6 +27,19 @@ body, th, td{
     width: 1000px;
 }
 
+q {
+/*   color: gray; */
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+}
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
 a{color: #37a987; text-decoration:none;}
 a.current{color: #b7b1d2;}
 a.current:hover{color: #e82945;}
@@ -81,6 +94,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 20px;
+text-align: center;
 }
 
 /* Estilo para los ítems de navegación */
@@ -96,6 +110,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
 .item-navegacion:hover {
 background-color: #793333E8;
 color: white;
+padding: 10px;
 }
 
 /* Estilo para los ítems de navegación MARCADOS */
@@ -186,9 +201,10 @@ ul.articles {
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+    .barra-navegacion{ padding: 5px 20px;}
     .banner { margin-bottom: -0.4em;}
     .item-navegacion {font-size:1.3em;}
-    .item-navegacion-mark {font-size:1.3em;}
+    .item-navegacion-mark {font-size:1.3em; padding: 2px;}
     table.organizers{width:900px; font-size: 1.2em; }
     td.organizer{white-space:nowrap; width:90%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
     td.organizer img{width: 100%; padding:0 0 20px 0;}
@@ -199,6 +215,47 @@ ul.articles {
 
 
 /* Popup box BEGIN */
+
+.hidden>div.hid {
+  display:none;}
+
+.hidden>div.vis {
+  display:block;
+  overflow:auto;
+  font-size:1em;
+  line-height: 20px;
+  color: grey;
+  margin: 10px 0px 5px 0px;
+  text-align:left;
+  font-weight:bold;
+}
+
+.visible>div.hid {
+  display:block;
+  background-color: white;
+  margin: 0px 10px 10px 0px;
+  padding: 0px 10px 0px 0px;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 30px;
+  color: gray;
+  border: 1px solid #cccccc;
+  border-radius:5px 5px 5px 5px;
+  text-indent: 20px;
+/*   font-style:italic; */
+}
+
+.visible>div.vis {
+  display:block;
+  overflow:auto;
+  font-size:1em;
+  line-height: 20px;
+  color: grey;
+  margin: 10px 0px 5px 0px;
+  text-align:left;
+  font-weight:bold;
+}
+
 
 div.vis {
   display:block;
@@ -222,7 +279,7 @@ div.hid {
   color: gray;
   border: 1px solid #cccccc;
   border-radius:5px 5px 5px 5px;
-  text-indent: 40px;
+  text-indent: 20px;
 }
 
 .hover_bkgr_fricc{
