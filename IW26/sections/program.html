@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Program for IberoSing 2026 - Singularity Theory conference">
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css" />
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Venue tab switching
+            $('.venue-tab').click(function () {
+                var target = $(this).data('target');
+                $('.venue-tab').removeClass('active');
+                $(this).addClass('active');
+                $('.venue-content').removeClass('active');
+                $('#' + target).addClass('active');
+            });
+
+            // Abstract toggle
+            $('.text_container').addClass("hidden");
+            $('.text_container').click(function () {
+                $(this).toggleClass("hidden visible");
+            });
+        });
+    </script>
+    <title>Program | IberoSing 2026</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../assets/banner.png" alt="IberoSing 2026">
+    </div>
+
+    <nav class="barra-navegacion">
+        <a href="../index.html" class="item-navegacion">About</a>
+        <a href="registration.html" class="item-navegacion">Registration</a>
+        <a href="program.html" class="item-navegacion-mark">Program</a>
+        <a href="map.html" class="item-navegacion">Venues</a>
+        <a href="usinfo.html" class="item-navegacion">Practical Info</a>
+        <a href="participants.html" class="item-navegacion">Participants</a>
+    </nav>
+
+    <main class="content">
+        <h2>Program</h2>
+
+        <div class="info-box">
+            <p>📋 <strong>Detailed program coming soon!</strong> The schedule will be published closer to the event.</p>
+        </div>
+
+        <!-- Venue Tabs -->
+        <div class="venue-tabs">
+            <div class="venue-tab active" data-target="zaragoza">
+                📍 Zaragoza (June 29 – July 3)
+            </div>
+            <div class="venue-tab" data-target="andorra">
+                🏔️ Andorra (July 6 – 8)
+            </div>
+        </div>
+
+        <!-- Zaragoza Program -->
+        <div id="zaragoza" class="venue-content active">
+            <div class="glass-card">
+                <h3>Week 1: Zaragoza</h3>
+                <p><strong>Focus:</strong> Minicourses and student-oriented talks</p>
+
+                <h4>Minicourses</h4>
+                <ul>
+                    <li><strong>Minicourse 1:</strong> <em>Floer homology</em> — Tomasz Pełka</li>
+                    <li><strong>Minicourse 2:</strong> <em>Derived categories</em> — Guillermo Peñafort Sanchis</li>
+                </ul>
+
+                <!-- Schedule Legend -->
+                <div class="schedule-legend">
+                    <div class="legend-item"><span class="legend-color minicourse1"></span> Minicourse 1</div>
+                    <div class="legend-item"><span class="legend-color minicourse2"></span> Minicourse 2</div>
+                    <div class="legend-item"><span class="legend-color talk"></span> Student Talks</div>
+                    <div class="legend-item"><span class="legend-color poster"></span> Poster Session</div>
+                    <div class="legend-item"><span class="legend-color break"></span> Break</div>
+                    <div class="legend-item"><span class="legend-color social"></span> Social Event</div>
+                </div>
+
+                <!-- Schedule Grid: Days as columns, Hours as rows -->
+                <table class="schedule-grid">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon 29</th>
+                            <th>Tue 30</th>
+                            <th>Wed 1</th>
+                            <th>Thu 2</th>
+                            <th>Fri 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Morning Sessions -->
+                        <tr>
+                            <td class="time-col">09:00 – 10:30</td>
+                            <td class="session-registration">Registration</td>
+                            <td class="session-minicourse1">Minicourse 1</td>
+                            <td class="session-minicourse2">Minicourse 2</td>
+                            <td class="session-minicourse1">Minicourse 1</td>
+                            <td class="session-minicourse2">Minicourse 2</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:30 – 11:00</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 – 12:30</td>
+                            <td class="session-social">Opening Session</td>
+                            <td class="session-minicourse1">Minicourse 1</td>
+                            <td class="session-minicourse2">Minicourse 2</td>
+                            <td class="session-minicourse1">Minicourse 1</td>
+                            <td class="session-minicourse2">Minicourse 2</td>
+                        </tr>
+                        <!-- Lunch -->
+                        <tr>
+                            <td class="time-col">12:30 – 14:30</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                        </tr>
+                        <!-- Afternoon Sessions -->
+                        <tr>
+                            <td class="time-col">14:30 – 16:00</td>
+                            <td class="session-talk">Student Talks</td>
+                            <td class="session-talk">Student Talks</td>
+                            <td class="session-social">Social Event</td>
+                            <td class="session-talk">Student Talks</td>
+                            <td class="session-social">Closing Session</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:00 – 16:30</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-social">Social Event</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:30 – 18:00</td>
+                            <td class="session-talk">Student Talks</td>
+                            <td class="session-talk">Student Talks</td>
+                            <td class="session-social">Social Event</td>
+                            <td class="session-poster">Poster Session</td>
+                            <td class="session-empty">Departure</td>
+                        </tr>
+                        <!-- Evening -->
+                        <tr>
+                            <td class="time-col">20:00</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-social">Conference Dinner</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Andorra Program -->
+        <div id="andorra" class="venue-content">
+            <div class="glass-card">
+                <h3>Week 2: Andorra</h3>
+                <p><strong>Focus:</strong> Research talks and discussions</p>
+
+                <!-- Schedule Legend -->
+                <div class="schedule-legend">
+                    <div class="legend-item"><span class="legend-color talk"></span> Research Talks</div>
+                    <div class="legend-item"><span class="legend-color poster"></span> Discussions</div>
+                    <div class="legend-item"><span class="legend-color break"></span> Break</div>
+                    <div class="legend-item"><span class="legend-color social"></span> Social Event</div>
+                </div>
+
+                <!-- Schedule Grid: Days as columns, Hours as rows -->
+                <table class="schedule-grid">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon 6</th>
+                            <th>Tue 7</th>
+                            <th>Wed 8</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Morning Sessions -->
+                        <tr>
+                            <td class="time-col">09:00 – 10:30</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-talk">Research Talks</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:30 – 11:00</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 – 12:30</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-talk">Research Talks</td>
+                        </tr>
+                        <!-- Lunch -->
+                        <tr>
+                            <td class="time-col">12:30 – 14:30</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                            <td class="session-break">Lunch</td>
+                        </tr>
+                        <!-- Afternoon Sessions -->
+                        <tr>
+                            <td class="time-col">14:30 – 16:00</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-poster">Discussions</td>
+                            <td class="session-social">Closing Session</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:00 – 16:30</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-break">Coffee Break</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:30 – 18:00</td>
+                            <td class="session-talk">Research Talks</td>
+                            <td class="session-poster">Discussions</td>
+                            <td class="session-empty">Departure</td>
+                        </tr>
+                        <!-- Evening -->
+                        <tr>
+                            <td class="time-col">20:00</td>
+                            <td class="session-social">Welcome Dinner</td>
+                            <td class="session-social">Conference Dinner</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>Invited Speakers</h2>
+        <p><em>Speaker list coming soon.</em></p>
+
+    </main>
+</body>
+
+</html>

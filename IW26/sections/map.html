@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venue information for IberoSing 2026 - Zaragoza and Andorra locations">
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.venue-tab').click(function () {
+                var target = $(this).data('target');
+                $('.venue-tab').removeClass('active');
+                $(this).addClass('active');
+                $('.venue-content').removeClass('active');
+                $('#' + target).addClass('active');
+            });
+        });
+    </script>
+    <title>Venues | IberoSing 2026</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../assets/banner.png" alt="IberoSing 2026">
+    </div>
+
+    <nav class="barra-navegacion">
+        <a href="../index.html" class="item-navegacion">About</a>
+        <a href="registration.html" class="item-navegacion">Registration</a>
+        <a href="program.html" class="item-navegacion">Program</a>
+        <a href="map.html" class="item-navegacion-mark">Venues</a>
+        <a href="usinfo.html" class="item-navegacion">Practical Info</a>
+        <a href="participants.html" class="item-navegacion">Participants</a>
+    </nav>
+
+    <main class="content">
+        <h2>Conference Venues</h2>
+
+        <!-- Venue Tabs -->
+        <div class="venue-tabs">
+            <div class="venue-tab active" data-target="zaragoza">
+                📍 Zaragoza, Spain
+            </div>
+            <div class="venue-tab" data-target="andorra">
+                🏔️ Andorra
+            </div>
+        </div>
+
+        <!-- Zaragoza Venue -->
+        <div id="zaragoza" class="venue-content active">
+            <div class="glass-card">
+                <h3>Week 1: Zaragoza</h3>
+                <span class="venue-date">June 29 – July 3, 2026</span>
+
+                <p style="margin-top: 1rem;">
+                    The first part of the conference will take place at the <strong>Universidad de Zaragoza</strong>,
+                    one of Spain's oldest and most prestigious universities, located in the vibrant capital of Aragón.
+                </p>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.0!2d-0.8809!3d41.6421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914dd5e618e91%3A0x9a4b9e41e9c0a5b6!2sUniversidad%20de%20Zaragoza!5e0!3m2!1sen!2ses!4v1704877200000!5m2!1sen!2ses"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <h4>How to Get There</h4>
+
+                <p><strong>By Plane:</strong></p>
+                <ul>
+                    <li><strong>Zaragoza Airport (ZAZ)</strong> — 10 km from city center, connected by bus and taxi</li>
+                    <li><strong>Barcelona Airport (BCN)</strong> — High-speed train connection (~1.5 hours)</li>
+                    <li><strong>Madrid Airport (MAD)</strong> — High-speed train connection (~1.5 hours)</li>
+                </ul>
+
+                <p><strong>By Train:</strong></p>
+                <ul>
+                    <li>Zaragoza-Delicias station has excellent AVE (high-speed) connections</li>
+                    <li>From Madrid: ~1h 30min</li>
+                    <li>From Barcelona: ~1h 30min</li>
+                </ul>
+
+                <p><strong>By Bus:</strong></p>
+                <ul>
+                    <li>ALSA operates regular routes from major Spanish cities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Andorra Venue -->
+        <div id="andorra" class="venue-content">
+            <div class="glass-card">
+                <h3>Week 2: Andorra</h3>
+                <span class="venue-date">July 6 – 8, 2026</span>
+
+                <p style="margin-top: 1rem;">
+                    The second part of the conference will take place in <strong>Andorra</strong>, a small principality
+                    nestled in the heart of the Pyrenees mountains, offering a unique setting for focused research
+                    discussions.
+                </p>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93561.1!2d1.5!3d42.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5f75e4f1e9a7d%3A0x4e3c5e2c5a3d1c2f!2sAndorra%20la%20Vella%2C%20Andorra!5e0!3m2!1sen!2ses!4v1704877200000!5m2!1sen!2ses"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <h4>How to Get There</h4>
+
+                <p><strong>From Zaragoza:</strong></p>
+                <ul>
+                    <li>By car: approximately 3 hours via the A-2 and N-260</li>
+                    <li>Organized transportation may be arranged between venues (TBA)</li>
+                </ul>
+
+                <p><strong>By Plane:</strong></p>
+                <ul>
+                    <li><strong>Barcelona Airport (BCN)</strong> — Closest major airport (~2.5 hours by car/bus)</li>
+                    <li><strong>Toulouse Airport (TLS)</strong> — Alternative option (~2.5 hours)</li>
+                </ul>
+
+                <p><strong>By Bus:</strong></p>
+                <ul>
+                    <li>Direct buses from Barcelona (Andbus, ALSA)</li>
+                    <li>Connections from Toulouse and other cities</li>
+                </ul>
+
+                <div class="info-box">
+                    <p>💡 <strong>Tip:</strong> Participants attending both parts of the conference may benefit from
+                        coordinated group travel between Zaragoza and Andorra. Details will be announced closer to the
+                        event.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

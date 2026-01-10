@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical information for IberoSing 2026 - Accommodation and travel tips">
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.venue-tab').click(function () {
+                var target = $(this).data('target');
+                $('.venue-tab').removeClass('active');
+                $(this).addClass('active');
+                $('.venue-content').removeClass('active');
+                $('#' + target).addClass('active');
+            });
+        });
+    </script>
+    <title>Practical Info | IberoSing 2026</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../assets/banner.png" alt="IberoSing 2026">
+    </div>
+
+    <nav class="barra-navegacion">
+        <a href="../index.html" class="item-navegacion">About</a>
+        <a href="registration.html" class="item-navegacion">Registration</a>
+        <a href="program.html" class="item-navegacion">Program</a>
+        <a href="map.html" class="item-navegacion">Venues</a>
+        <a href="usinfo.html" class="item-navegacion-mark">Practical Info</a>
+        <a href="participants.html" class="item-navegacion">Participants</a>
+    </nav>
+
+    <main class="content">
+        <h2>Practical Information</h2>
+
+        <div class="info-box">
+            <p>🏨 <strong>Book early!</strong> Both Zaragoza and Andorra are popular destinations. We recommend booking
+                accommodation well in advance.</p>
+        </div>
+
+        <!-- Venue Tabs -->
+        <div class="venue-tabs">
+            <div class="venue-tab active" data-target="zaragoza-info">
+                📍 Zaragoza
+            </div>
+            <div class="venue-tab" data-target="andorra-info">
+                🏔️ Andorra
+            </div>
+        </div>
+
+        <!-- Zaragoza Info -->
+        <div id="zaragoza-info" class="venue-content active">
+            <div class="glass-card">
+                <h3>Accommodation in Zaragoza</h3>
+                <span class="venue-date">June 29 – July 3, 2026</span>
+
+                <p style="margin-top: 1rem;">
+                    Zaragoza offers a wide range of accommodation options, from budget-friendly hostels to upscale
+                    hotels. The city center is compact and well-connected by public transport.
+                </p>
+
+                <h4>Recommended Hotels</h4>
+                <ol>
+                    <li><strong>Hotel Palafox</strong> — Central location, upscale (<a
+                            href="https://maps.app.goo.gl/palafoxzaragoza" target="_blank">Map</a>)</li>
+                    <li><strong>Hotel Sauce</strong> — Near the university, mid-range</li>
+                    <li><strong>Ibis Zaragoza Centro</strong> — Budget-friendly, central</li>
+                    <li><strong>NH Collection Gran Hotel</strong> — Historic building, central</li>
+                    <li><strong>Hotel Goya</strong> — Good value, near old town</li>
+                </ol>
+
+                <h4>Getting Around</h4>
+                <ul>
+                    <li><strong>Tram:</strong> Modern tram system connects key areas</li>
+                    <li><strong>Bus:</strong> Extensive network covering the city</li>
+                    <li><strong>Walking:</strong> City center is very walkable</li>
+                </ul>
+
+                <h4>What to See</h4>
+                <ul>
+                    <li>Basílica del Pilar — Iconic baroque basilica</li>
+                    <li>La Aljafería — 11th-century Islamic palace</li>
+                    <li>Roman Theatre — Ancient ruins in the city center</li>
+                    <li>El Tubo — Tapas district with excellent bars</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Andorra Info -->
+        <div id="andorra-info" class="venue-content">
+            <div class="glass-card">
+                <h3>Accommodation in Andorra</h3>
+                <span class="venue-date">July 6 – 8, 2026</span>
+
+                <p style="margin-top: 1rem;">
+                    Andorra la Vella, the capital, offers numerous hotels ranging from ski resorts to boutique
+                    accommodations. July is summer season with pleasant mountain weather.
+                </p>
+
+                <h4>Recommended Hotels</h4>
+                <ol>
+                    <li><strong>Hotel Yomo</strong> — Modern, central location</li>
+                    <li><strong>Hotel Centric</strong> — Good value in the center</li>
+                    <li><strong>Hotel Metropolis</strong> — Near shopping area</li>
+                    <li><strong>Art Hotel</strong> — Contemporary design hotel</li>
+                    <li><strong>Hotel Pyrénées</strong> — Traditional, well-located</li>
+                </ol>
+
+                <h4>Practical Tips</h4>
+                <ul>
+                    <li><strong>Currency:</strong> Euro (€)</li>
+                    <li><strong>Language:</strong> Catalan (Spanish and French widely spoken)</li>
+                    <li><strong>Weather:</strong> July average 20-25°C, can be cooler in evenings</li>
+                    <li><strong>Shopping:</strong> Tax-free shopping available</li>
+                </ul>
+
+                <h4>What to See</h4>
+                <ul>
+                    <li>Caldea Spa — Largest thermal spa in Europe</li>
+                    <li>Vallnord — Summer hiking and mountain activities</li>
+                    <li>Casa de la Vall — Historic house of parliament</li>
+                    <li>Naturlandia — Nature park and activities</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Travel Between Venues</h2>
+
+        <div class="glass-card">
+            <p>
+                The distance between Zaragoza and Andorra is approximately <strong>250 km</strong> (about 3 hours by
+                car). Options for traveling between venues:
+            </p>
+            <ul>
+                <li><strong>Organized group transport:</strong> We may arrange shared transportation for participants
+                    attending both parts. Details TBA.</li>
+                <li><strong>Rental car:</strong> Cars can be rented in Zaragoza. Scenic mountain drive via N-260.</li>
+                <li><strong>Bus:</strong> Connections via Barcelona or direct services when available.</li>
+            </ul>
+        </div>
+
+        <h2>Contact</h2>
+        <p>
+            For any questions about practical arrangements, please contact us at <strong>iberosing (at) ucm (dot)
+                es</strong>.
+        </p>
+
+    </main>
+</body>
+
+</html>
