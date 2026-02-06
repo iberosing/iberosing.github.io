@@ -329,6 +329,13 @@ ol li {
     line-height: 1.6;
 }
 
+.speaker-affiliation {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 ul.articles {
     list-style: none;
     padding-left: 0;
