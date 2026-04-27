@@ -7,57 +7,7 @@
     <meta name="description" content="Venue information for IberoSing 2026 - Zaragoza and Andorra locations">
     <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            function getVenueTargetFromHash() {
-                var hashTarget = window.location.hash.replace('#', '');
-                var candidates = [hashTarget, hashTarget + '-info', hashTarget.replace(/-info$/, '')];
-
-                for (var i = 0; i < candidates.length; i++) {
-                    var target = candidates[i];
-                    var tab = $('.venue-tab').filter(function () {
-                        return $(this).data('target') === target;
-                    });
-
-                    if (tab.length && $('#' + target).length) {
-                        return target;
-                    }
-                }
-
-                return hashTarget;
-            }
-
-            function activateVenueTab(target, updateHash) {
-                var tab = $('.venue-tab').filter(function () {
-                    return $(this).data('target') === target;
-                });
-                var content = $('#' + target);
-
-                if (!tab.length || !content.length) {
-                    return;
-                }
-
-                $('.venue-tab').removeClass('active');
-                tab.addClass('active');
-                $('.venue-content').removeClass('active');
-                content.addClass('active');
-
-                if (updateHash) {
-                    history.replaceState(null, '', '#' + target.replace(/-info$/, ''));
-                }
-            }
-
-            $('.venue-tab').click(function () {
-                activateVenueTab($(this).data('target'), true);
-            });
-
-            activateVenueTab(getVenueTargetFromHash(), false);
-
-            $(window).on('hashchange', function () {
-                activateVenueTab(getVenueTargetFromHash(), false);
-            });
-        });
-    </script>
+    <script src="../assets/venue-tabs.js"></script>
     <title>Venues | IberoSing 2026</title>
 </head>
 
