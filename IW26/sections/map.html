@@ -9,12 +9,52 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.venue-tab').click(function () {
-                var target = $(this).data('target');
+            function getVenueTargetFromHash() {
+                var hashTarget = window.location.hash.replace('#', '');
+                var candidates = [hashTarget, hashTarget + '-info', hashTarget.replace(/-info$/, '')];
+
+                for (var i = 0; i < candidates.length; i++) {
+                    var target = candidates[i];
+                    var tab = $('.venue-tab').filter(function () {
+                        return $(this).data('target') === target;
+                    });
+
+                    if (tab.length && $('#' + target).length) {
+                        return target;
+                    }
+                }
+
+                return hashTarget;
+            }
+
+            function activateVenueTab(target, updateHash) {
+                var tab = $('.venue-tab').filter(function () {
+                    return $(this).data('target') === target;
+                });
+                var content = $('#' + target);
+
+                if (!tab.length || !content.length) {
+                    return;
+                }
+
                 $('.venue-tab').removeClass('active');
-                $(this).addClass('active');
+                tab.addClass('active');
                 $('.venue-content').removeClass('active');
-                $('#' + target).addClass('active');
+                content.addClass('active');
+
+                if (updateHash) {
+                    history.replaceState(null, '', '#' + target.replace(/-info$/, ''));
+                }
+            }
+
+            $('.venue-tab').click(function () {
+                activateVenueTab($(this).data('target'), true);
+            });
+
+            activateVenueTab(getVenueTargetFromHash(), false);
+
+            $(window).on('hashchange', function () {
+                activateVenueTab(getVenueTargetFromHash(), false);
             });
         });
     </script>
@@ -144,7 +184,7 @@
 
                 <p><strong>By Bus:</strong></p>
                 <ul>
-                    <li>Direct buses from Barcelona (Andbus, ALSA) and Lleida</li>
+                    <li>Direct buses from Barcelona (Andbus, Direct Bus, ALSA) and Lleida</li>
                     <li>Connections from Toulouse and other cities</li>
                 </ul>
 
@@ -168,10 +208,12 @@
                 <ul>
                     <li><strong>Trains (Zaragoza ↔ Lleida):</strong> <a href="https://www.renfe.com"
                             target="_blank">Renfe</a> — Official Spanish rail operator</li>
-                    <li><strong>Buses to Andorra:</strong>
+                    <li><strong><a href="https://www.busandorra.com/" target="_blank">Buses to Andorra</a>:</strong>
                         <ul>
                             <li><a href="https://www.andorrabybus.com" target="_blank">Andbus</a> — Routes from
                                 Barcelona, Lleida, and airports</li>
+                            <li><a href="https://www.andorradirectbus.es/en/" target="_blank">Direct Bus</a> — Routes
+                                from Barcelona Airport and Barcelona Sants</li>
                             <li><a href="https://www.alsa.es" target="_blank">ALSA</a> — Routes from multiple Spanish
                                 cities</li>
                             <li><a href="https://www.hife.es" target="_blank">Hife</a> — Routes from Lleida and
