@@ -1062,7 +1062,7 @@ sub {
 
 .funding-logos {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: clamp(0.75rem, 1.5vw, 1.5rem);
