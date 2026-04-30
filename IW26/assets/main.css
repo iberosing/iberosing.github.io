@@ -780,6 +780,10 @@ table.plenary {
     background: rgba(236, 72, 153, 0.2);
 }
 
+.legend-color.registration {
+    background: rgba(34, 197, 94, 0.25);
+}
+
 /* Responsive schedule */
 @media (max-width: 768px) {
     .schedule-grid {

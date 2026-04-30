@@ -198,11 +198,14 @@
 
                 <!-- Schedule Legend -->
                 <div class="schedule-legend">
+                    <div class="legend-item"><span class="legend-color registration"></span> Registration</div>
                     <div class="legend-item"><span class="legend-color talk"></span> Research Talks</div>
+                    <div class="legend-item"><span class="legend-color poster"></span> Poster Session</div>
                     <div class="legend-item"><span class="legend-color break"></span> Break</div>
+                    <div class="legend-item"><span class="legend-color social"></span> Social Activity</div>
                 </div>
 
-                <!-- Placeholder Schedule Grid: Days as columns, Hours as rows -->
+                <!-- Schedule Grid -->
                 <table class="schedule-grid">
                     <thead>
                         <tr>
@@ -213,49 +216,84 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Morning Sessions -->
                         <tr>
-                            <td class="time-col">09:00 – 10:00</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                        </tr>
-                        <tr>
-                            <td class="time-col">10:00 – 11:00</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                        </tr>
-                        <tr>
-                            <td class="time-col">11:00 – 11:30</td>
-                            <td class="session-break">Coffee Break</td>
-                            <td class="session-break">Coffee Break</td>
-                            <td class="session-break">Coffee Break</td>
-                        </tr>
-                        <tr>
-                            <td class="time-col">11:30 – 12:30</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
-                        </tr>
-                        <!-- Lunch -->
-                        <tr>
-                            <td class="time-col">12:30 – 14:30</td>
-                            <td class="session-break">Lunch</td>
-                            <td class="session-break">Lunch</td>
-                            <td class="session-empty">Departure</td>
-                        </tr>
-                        <!-- Afternoon Sessions -->
-                        <tr>
-                            <td class="time-col">14:30 – 15:30</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
+                            <td class="time-col">08:30 – 09:00</td>
+                            <td class="session-registration">Registration</td>
+                            <td class="session-empty">—</td>
                             <td class="session-empty">—</td>
                         </tr>
                         <tr>
-                            <td class="time-col">15:30 – 16:30</td>
-                            <td class="session-talk">Research Talk</td>
-                            <td class="session-talk">Research Talk</td>
+                            <td class="time-col">09:00 – 09:15</td>
+                            <td class="session-social">Opening</td>
+                            <td rowspan="2" class="session-talk">Álvaro Liendo</td>
+                            <td rowspan="2" class="session-talk">Patrick Popescu-Pampu</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:15 – 10:00</td>
+                            <td rowspan="2" class="session-talk">Tomasz Pełka</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:00 – 10:15</td>
+                            <td rowspan="2" class="session-talk">Guillermo Peñafort Sanchis</td>
+                            <td rowspan="2" class="session-talk">Guillem Blanco</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:15 – 11:00</td>
+                            <td rowspan="2" class="session-talk">Roi Docampo</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00 – 11:15</td>
+                            <td rowspan="2" class="session-break">Coffee break</td>
+                            <td rowspan="2" class="session-break">Coffee break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:15 – 11:30</td>
+                            <td rowspan="2" class="session-break">Coffee break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:30 – 11:45</td>
+                            <td rowspan="2" class="session-talk">María Pe Pereira</td>
+                            <td rowspan="2" class="session-talk">Pierrette Cassou-Noguès</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:45 – 12:30</td>
+                            <td rowspan="2" class="session-talk">Paolo Aceto</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:30 – 12:45</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-social">Closing</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:30 – 15:15</td>
+                            <td class="session-talk">Contributed talk</td>
+                            <td rowspan="2" class="session-talk">Antoni Rangachev</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">15:15 – 15:30</td>
+                            <td rowspan="2" class="session-talk">Contributed talk</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">15:30 – 16:00</td>
+                            <td rowspan="2" class="session-talk">Contributed talk</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:00 – 16:15</td>
+                            <td rowspan="2" class="session-poster">Poster session</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:15 – 16:30</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-empty">—</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">TBC</td>
+                            <td class="session-empty">—</td>
+                            <td class="session-social">Social activity / Social dinner</td>
                             <td class="session-empty">—</td>
                         </tr>
                     </tbody>
