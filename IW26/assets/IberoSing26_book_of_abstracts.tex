@@ -1,0 +1,314 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.6cm,top=2.8cm,bottom=2.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{nosep}
+
+\definecolor{IberoTeal}{HTML}{0D9488}
+\definecolor{IberoBlue}{HTML}{2563EB}
+\definecolor{IberoSlate}{HTML}{334155}
+\definecolor{IberoMuted}{HTML}{64748B}
+\definecolor{IberoRule}{HTML}{CBD5E1}
+
+\hypersetup{
+    colorlinks=true,
+    hypertexnames=false,
+    linkcolor=IberoBlue,
+    urlcolor=IberoTeal,
+    pdftitle={IberoSing 2026 Book of Abstracts},
+    pdfauthor={IberoSing International Workshop 2026}
+}
+
+\titleformat{\section}
+    {\Large\bfseries\sffamily\color{IberoTeal}}
+    {}
+    {0pt}
+    {}
+
+\titleformat{\subsection}
+    {\large\bfseries\sffamily\color{IberoSlate}}
+    {}
+    {0pt}
+    {}
+
+\pagestyle{fancy}
+\setlength{\headheight}{22pt}
+\fancyhf{}
+\lhead{\sffamily\small IberoSing 2026}
+\rhead{\sffamily\small Book of Abstracts}
+\cfoot{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{IberoRule}\leaders\hrule height \headrulewidth\hfill}}
+
+\newcommand{\EntryHeading}[3]{%
+    \phantomsection
+    \addcontentsline{toc}{section}{#1: #2}
+    {\sffamily\Large\bfseries\color{IberoTeal}#2\par}
+    \vspace{0.35em}
+    {\large\bfseries #1\par}
+    \ifstrempty{#3}{}{%
+        {\itshape\color{IberoMuted}#3\par}
+    }
+    \vspace{0.9em}
+    {\sffamily\small\bfseries\color{IberoBlue}Abstract\par}
+    \vspace{0.2em}
+}
+
+\newcommand{\AbstractEntry}[4]{%
+    \clearpage
+    \EntryHeading{#1}{#2}{#3}
+    #4
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+    \vspace*{0.5cm}
+    \includegraphics[width=\textwidth]{assets/banner.png}
+
+    \vfill
+
+    {\sffamily\bfseries\fontsize{30}{36}\selectfont Book of Abstracts\par}
+    \vspace{0.4cm}
+    {\sffamily\Large\color{IberoTeal}Zaragoza Week\par}
+    \vspace{0.9cm}
+    {\Large IberoSing International Workshop 2026\par}
+    \vspace{0.35cm}
+    {\large June 29--July 3, 2026\par}
+    {\large Universidad de Zaragoza, Spain\par}
+
+    \vfill
+
+    {\sffamily\small\color{IberoMuted}
+    Fifth edition of the IberoSing International Workshop on Singularity Theory\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\section*{Zaragoza Abstracts}
+\addcontentsline{toc}{section}{Zaragoza Abstracts}
+
+\AbstractEntry
+{Elvira Pérez Callejo}
+{Explicit cones for surfaces from pencils at infinity}
+{Universidad de Valladolid (IMUVA)}
+{
+We study rational surfaces obtained by blowing up the projective plane at configurations
+$\mathcal{C}=\mathcal{B}\cup \mathcal{D}$, where $\mathcal{B}$ is the set of proper and
+infinitely near base points of the pencil associated to a curve with one place at infinity,
+and $\mathcal{D}$ is a finite set of free infinitely near points lying on strict transforms
+of curves of the pencil. On the resulting surface $X$, the cone of curves
+$\operatorname{NE}(X)$ and the nef cone $\operatorname{Nef}(X)$ are polyhedral, and we give
+an explicit description of them. Moreover, when the pencil arises from an AMS-type curve and
+$\mathcal{D}$ contains at most two free points on each considered curve, the Cox ring
+$\operatorname{Cox}(X)$ is finitely generated.
+
+This is joint work with Carlos Galindo, Francisco Monserrat and Carlos-Jesús Moreno-Ávila.
+}
+
+\AbstractEntry
+{Tomasz Pełka}
+{Fixed point Floer homology: an introduction}
+{Jagiellonian University}
+{
+The course will be a gentle introduction to fixed point Floer theory, aimed at non-experts,
+with special focus on possible applications to singularity theory.
+
+First, I will explain Floer's original motivation: the Arnold conjecture, bounding the number
+of fixed points of a Hamiltonian diffeomorphism by the sum of Betti numbers. With this in
+mind, I will introduce the Floer complex, following the lectures of D. Salamon. Next, I will
+explain M. McLean's proposal to use Floer-theoretic invariants to study the geometry of
+isolated singularities. Following his ICM address, I will explain why smoothness of isolated
+threefold singularities is a symplectic invariant, even though it is not a topological one.
+
+For isolated hypersurface singularities, I will state the arc-Floer conjecture, relating fixed
+point Floer homology of the monodromy with the compactly-supported cohomology of contact
+loci. This conjecture is motivated by the existence of spectral sequences which converge to
+each side and have the same first page. On the Floer side, it is a Morse--Bott type spectral
+sequence, due to McLean. I will explain how to construct it from the symplectic version of the
+A'Campo model (joint work by J. F. de Bobadilla). Finally, I will indicate some special cases
+when this spectral sequence degenerates. In particular, an observation of P. Seidel yields
+such degeneration for plane curves, which is one of the ingredients of the proof of arc-Floer
+conjectures in this case, due to J. de la Bodega and E. de Lorenzo Poza.
+}
+
+\AbstractEntry
+{María Martín Vega}
+{The Bruno ideal for logarithmic vector fields}
+{Institut de Mathématiques de Jussieu--Paris}
+{
+Given a germ of analytic vector field $\partial$, let
+$\partial=\partial_{\rm ss}+\partial_{\rm nilp}$ be its unique formal Jordan decomposition,
+where $\partial_{\rm ss}$ is semi-simple and $\partial_{\rm nilp}$ is nilpotent. When
+$\partial$ is logarithmic, we define the Bruno ideal $B(\partial)$ as the formal locus where
+the semi-simple and the nilpotent components are collinear, that is, the vanishing locus of
+$\partial_{\rm ss}\wedge \partial_{\rm nilp}$.
+
+We prove the following result originally stated by A. D. Bruno: if the eigenvalues of
+$\partial_{\rm ss}$ satisfy an arithmetic condition, then $B(\partial)$ is analytic and the
+restriction of $\partial$ to its zero set $V$ is analytically normalizable.
+
+This talk is based on joint work with Daniel Panazzolo.
+}
+
+\AbstractEntry
+{Daniel Bath}
+{The Strong Monodromy Conjecture and certain homogeneous polynomials}
+{KU Leuven}
+{
+The Strong Monodromy Conjecture promises a miraculous connection between the theory of
+algebraic differential operators and the theory of motivic integration, namely it claims the
+poles of the motivic zeta function are contained in the zeroes of the Bernstein--Sato
+polynomials. Alas, the miracle has few witnesses; even for homogeneous polynomials in three
+variables this conjecture is open. We prove it for homogeneous polynomials in three variables
+whose associated reduced projective divisor has, at worst, quasi-homogeneous singularities.
+In the analogous situation with more variables, we will ``solve'' the D-module part of the
+story.
+
+This is joint work with Wim Veys; arXiv:2602.20922.
+}
+
+\AbstractEntry
+{Mario Morán Cañón}
+{Isosingularity in algebraic varieties and arc schemes}
+{Universidad Autónoma de Madrid (UAM) / ICMAT}
+{
+Given a scheme, analytic isosingularity is, informally speaking, the property that the formal
+neighborhood of a point remains constant as the point varies. We will present several results,
+as well as a number of questions, concerning analytic isosingularity in algebraic varieties on
+the one hand, and in arc schemes, that is, the space of formal germs of curves on an algebraic
+variety, on the other. This is joint work with David Bourqui.
+}
+
+\AbstractEntry
+{Roger Gómez López}
+{The Archimedean zeta function}
+{Universitat Politècnica de Catalunya (UPC)}
+{
+The Archimedean zeta function is a one-parameter family of distributions, for which the
+dependence on the parameter is analytic in the region of convergence. Two approaches have
+been used to obtain its meromorphic extension to the complex plane: resolution of
+singularities and the Bernstein--Sato polynomial. In the case of irreducible plane curves,
+we have obtained a full explicit description of the poles and the residues, and their
+consequences for the Bernstein--Sato polynomial.
+}
+
+\AbstractEntry
+{Alex Hof}
+{Hilbert schemes of points and the lattice cohomology of finite maps}
+{Alfréd Rényi Institute of Mathematics}
+{
+The analytic lattice cohomology of a reduced curve germ categorifies its delta invariant and
+captures information about other invariants, including its Cohen--Macaulay type and, in the
+planar case, its Heegaard Floer link homology. We show that these cohomology groups can be
+computed from filtrations on an appropriate collection of nested punctual Hilbert schemes;
+this allows us to define a theory of lattice cohomology for finite maps between
+arbitrary-dimensional complex-analytic multigerms such that the lattice cohomology of a curve
+germ is retrieved as the cohomology of its normalization map. As an application, we construct
+specialization maps in lattice cohomology arising from deformations of curve germs. Based on
+joint work with András Némethi.
+}
+
+\AbstractEntry
+{Manuel González Villa}
+{Denef--Loeser zeta functions of suspensions and Lê--Yomdin singularities}
+{Universidad de Zaragoza}
+{
+In this talk, we provide formulas for the motivic and topological zeta functions for a broad
+family of hypersurfaces. This family includes suspensions of hypersurfaces by an arbitrary
+number of points and extends beyond the classical Thom--Sebastiani type. Furthermore, we
+present applications to the monodromy and holomorphy conjectures for suspensions and
+Lê--Yomdin singularities. This is joint work with Enrique Artal Bartolo, Pedro D. González
+Pérez, and Edwin León Cardenal (arXiv:2604.24523v1).
+}
+
+\AbstractEntry
+{Zsolt Baja}
+{Cyclic quotient surface singularities and proportionally modular numerical semigroups}
+{Babeș-Bolyai University}
+{
+Let $(X,o)$ be a weighted homogeneous surface singularity whose link is a rational homology
+sphere. By the Pinkham--Dolgachev--Demazure formula, the dimensions of the graded components
+of its coordinate ring
+\[
+R_{(X,o)}=\bigoplus_{\ell\geq 0} R_{(X,o),\ell}
+\]
+are determined by the topology of the singularity. Therefore one can associate with $(X,o)$
+the numerical semigroup
+\[
+\mathcal{S}
+=
+\left\{
+\ell\in\mathbb{Z}_{\geq 0}
+\mid
+\dim R_{(X,o),\ell}\neq 0
+\right\}.
+\]
+Numerical semigroups obtained in this way are called \emph{representable numerical
+semigroups}. This construction makes it possible to apply tools from singularity theory to the
+study of numerical semigroups.
+
+In 2020, László and Némethi derived a formula for the Frobenius number of a representable
+numerical semigroup and established the representability of a class of numerical semigroups.
+Subsequent works provided a characterization of representable semigroups and established a
+formula for their genus.
+
+In this talk, we focus on the case in which $(X,o)$ is a cyclic quotient singularity. The
+associated semigroups form the class of \emph{proportionally modular numerical semigroups}
+introduced by Rosales et al. We describe this correspondence and illustrate how to determine a
+system of generators, as well as how to construct a resolution graph representing a given
+semigroup. Finally, we present a solution to a previously open problem posed by Rosales and
+García-Sánchez in their 2009 monograph regarding modular numerical semigroups.
+
+This is joint work with T. László and A. Némethi.
+}
+
+\AbstractEntry
+{Irma Pallarés Torres}
+{On the Hodge index theorem for singular spaces and characteristic classes}
+{Universidad de Cantabria}
+{
+The classical Hodge index theorem identifies the signature of a compact complex manifold with
+the value at $y=1$ of its Hirzebruch $\chi_y$-genus. Recently, this result has been extended
+to singular spaces. Moreover, Brasselet, Schürmann, and Yokura conjectured a characteristic
+class version of this theorem. In this talk, we will discuss progress on this conjecture.
+This presentation is based on joint work with Fernández de Bobadilla and Saito.
+}
+
+\AbstractEntry
+{Eduardo de Lorenzo Poza}
+{Geometry of contact loci via semihomogeneous singularities}
+{BCAM (Basque Center for Applied Mathematics)}
+{
+Given a scheme $X$, a regular function $f$ and an integer $m$, the $m$-contact locus
+$\mathcal{X}_m(f)$ is the subspace of the $m$-jet space $J_m(X)$ consisting of those arcs that
+meet the hypersurface $f^{-1}(0)$ with order precisely $m$. Even though the additive
+invariants of $\mathcal{X}_m(f)$ are relatively well understood thanks to the tools of
+motivic integration, other geometric invariants such as the number of connected or
+irreducible components, codimension, cohomology, etc. seem more challenging to comprehend.
+In this talk we will explain how these geometric invariants are related to other areas such
+as birational geometry and Floer theory, and we will use the example of semihomogeneous
+singularities to showcase some unexpected properties of contact loci.
+}
+
+\end{document}
