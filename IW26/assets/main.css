@@ -418,6 +418,45 @@ ul.articles li:last-child {
     border-bottom: none;
 }
 
+/* ==================== Participants ==================== */
+.participants-table {
+    table-layout: fixed;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    background: var(--glass-bg);
+    box-shadow: var(--glass-shadow);
+}
+
+.participants-table th {
+    background: rgba(13, 148, 136, 0.08);
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.participants-table th:first-child,
+.participants-table td:first-child {
+    width: 34%;
+}
+
+.participants-table tr {
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.participants-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.participants-table td:first-child {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.participants-table td {
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
 /* ==================== Tables ==================== */
 table {
     width: 100%;
@@ -611,13 +650,17 @@ table.plenary {
 }
 
 .venue-tab {
+    appearance: none;
     padding: 1rem 2rem;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-full);
     color: var(--text-secondary);
+    font: inherit;
     font-weight: 500;
     cursor: pointer;
+    line-height: 1.2;
+    text-align: center;
     transition: all var(--transition-normal);
 }
 

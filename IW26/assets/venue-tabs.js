@@ -1,6 +1,6 @@
 (function () {
     var STORAGE_KEY = 'iw26-active-venue';
-    var TABBED_PAGES = ['program.html', 'map.html', 'usinfo.html'];
+    var TABBED_PAGES = ['program.html', 'map.html', 'usinfo.html', 'participants.html'];
 
     function onReady(callback) {
         if (document.readyState === 'loading') {
