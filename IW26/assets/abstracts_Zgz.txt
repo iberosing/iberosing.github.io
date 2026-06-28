@@ -24,6 +24,15 @@ First, I will explain the original motivation of Floer: the Arnold conjecture, b
 
 --------------------------------------------------------
 
+Guillermo Peñafort Sanchis
+
+Title: Derived categories.
+
+Abstract:
+This minicourse will provide an introduction to derived categories and derived functors, with an emphasis on their applications to singularity theory. We will develop the basic formalism and use it to study a number of classical results and constructions, including criteria for Cohen–Macaulayness, depth computations, comparison theorems relating singular cohomology, sheaf cohomology and de Rham cohomology, Poincaré–Verdier duality and vanishing cohomology of deformations of singularities.
+
+--------------------------------------------------------
+
 María Martín Vega
 
 Title: The Bruno ideal for logarithmic vector fields
