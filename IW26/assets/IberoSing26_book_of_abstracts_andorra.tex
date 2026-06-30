@@ -1,0 +1,230 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.6cm,top=2.8cm,bottom=2.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\setlist{nosep}
+
+\definecolor{IberoTeal}{HTML}{0D9488}
+\definecolor{IberoBlue}{HTML}{2563EB}
+\definecolor{IberoSlate}{HTML}{334155}
+\definecolor{IberoMuted}{HTML}{64748B}
+\definecolor{IberoRule}{HTML}{CBD5E1}
+
+\hypersetup{
+    colorlinks=true,
+    hypertexnames=false,
+    linkcolor=IberoBlue,
+    urlcolor=IberoTeal,
+    pdftitle={IberoSing 2026 Andorra Book of Abstracts},
+    pdfauthor={IberoSing International Workshop 2026}
+}
+
+\titleformat{\section}
+    {\Large\bfseries\sffamily\color{IberoTeal}}
+    {}
+    {0pt}
+    {}
+
+\titleformat{\subsection}
+    {\large\bfseries\sffamily\color{IberoSlate}}
+    {}
+    {0pt}
+    {}
+
+\pagestyle{fancy}
+\setlength{\headheight}{22pt}
+\fancyhf{}
+\lhead{\sffamily\small IberoSing 2026}
+\rhead{\sffamily\small Book of Abstracts}
+\cfoot{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{IberoRule}\leaders\hrule height \headrulewidth\hfill}}
+
+\newcommand{\EntryHeading}[3]{%
+    \phantomsection
+    \addcontentsline{toc}{section}{#1: #2}
+    {\sffamily\Large\bfseries\color{IberoTeal}\raggedright #2\par}
+    \vspace{0.35em}
+    {\large\bfseries #1\par}
+    \ifstrempty{#3}{}{%
+        {\itshape\color{IberoMuted}#3\par}
+    }
+    \vspace{0.9em}
+    {\sffamily\small\bfseries\color{IberoBlue}Abstract\par}
+    \vspace{0.2em}
+}
+
+\newcommand{\AbstractEntry}[4]{%
+    \clearpage
+    \EntryHeading{#1}{#2}{#3}
+    #4
+}
+
+\newcommand{\AbstractEntryHere}[4]{%
+    \EntryHeading{#1}{#2}{#3}
+    #4
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+    \vspace*{0.5cm}
+    \includegraphics[width=\textwidth]{assets/banner.png}
+
+    \vfill
+
+    {\sffamily\bfseries\fontsize{30}{36}\selectfont Book of Abstracts\par}
+    \vspace{0.4cm}
+    {\sffamily\Large\color{IberoTeal}Andorra Week\par}
+    \vspace{0.9cm}
+    {\Large IberoSing International Workshop 2026\par}
+    \vspace{0.35cm}
+    {\large July 6--8, 2026\par}
+    {\large Universitat d'Andorra, Andorra\par}
+
+    \vfill
+
+    {\sffamily\small\color{IberoMuted}
+    Fifth edition of the IberoSing International Workshop on Singularity Theory\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\section*{Andorra Abstracts}
+\addcontentsline{toc}{section}{Andorra Abstracts}
+
+\AbstractEntry
+{Paolo Aceto}
+{TBA}
+{Université de Lille}
+{}
+
+\AbstractEntry
+{Guillem Blanco}
+{The Gauss-Manin system of an ICIS}
+{Universitat Politècnica de Catalunya}
+{The Gauss-Manin system of an isolated hypersurface singularity is a classical example of a regular holonomic D-module carrying a Hodge filtration. Its relevance comes from the connection with the local Bernstein-Sato polynomial, the monodromy, and the spectrum of the singularity. In this talk, we will define the Gauss-Manin system of an isolated complete intersection singularity (ICIS) and study its Hodge filtration using deformation theory and local cohomology modules. In particular, we will relate the Hodge filtration to a generalized Brieskorn lattice. Moreover, using recent results on rational and Du Bois singularities, we will recover the microlocal structure and the link with b-functions, generalizing the hypersurface case.}
+
+\AbstractEntry
+{Pierrette Cassou-Noguès}
+{Decorated trees and numerical semigroups}
+{Université de Bordeaux}
+{The link between the two subjects is classical if we think about semigroups associated to singularities of algebraic plane curves and their
+trees. In this talk we want to enlarge the classes of objects that can be
+involved in the relation between the two topics.}
+
+\AbstractEntry
+{Roi Docampo}
+{Derived Arc Spaces}
+{University of Oklahoma}
+{We study jet schemes and arc spaces in the context of derived algebraic geometry. Explicitly, we consider the jet and arc functors in the category of schemes and study their animations to the category of derived schemes---what we call the derived jet and arc spaces. We show that the derived constructions agree with the classical versions when the base scheme is smooth, or more generally for local complete intersection log canonical singularities, giving a derived interpretation to a theorem of Mustaţă. For more singular spaces we get new singularity invariants in the form of higher homotopy groups. We also study cotangent complexes for derived jet and arc spaces, generalizing previous formulas for sheaves of differentials of classical jet and arc spaces. Several applications are obtained. Specifically, we revisit recent results on the local structure of arc spaces from the lens of cotangent complexes, giving more unified proofs and removing unnecessary hypotheses. In particular, we extend a version of Reguera's curve selection lemma for arc spaces to the case of non-perfect base fields. This is joint work with L. E. Miller and C. E. Overton-Walker.}
+
+\AbstractEntry
+{Álvaro Liendo}
+{Nash Blowups Fail to Resolve Singularities}
+{Universidad de Talca}
+{Resolution of singularities in characteristic zero was established by
+Hironaka, whose approach relies on a sequence of blowups along
+carefully chosen centers. Although effective, this method involves a
+variety of non-canonical choices. In order to obtain a canonical
+procedure, Nash proposed the blowup that now bears his name, raising
+the question of whether its iteration suffices to resolve all
+singularities. In joint work with Federico Castillo, Daniel Duarte,
+and Maximiliano Leyton-Álvarez, we construct toric counterexamples
+showing that in dimensions at least four the iterated Nash blowup does
+not lead to a resolution. For the non-normalized Nash blowup, we
+further obtain a counterexample already in dimension three, while the
+normalized case in dimension three remains open. I will discuss these
+counterexamples and place them in the broader context of the
+resolution problem.}
+
+
+\AbstractEntry
+{María Pe Pereira}
+{TBA}
+{Universidad Complutense de Madrid (IMI)}
+{}
+
+
+\AbstractEntry
+{Tomasz Pełka}
+{Lagrangian tori at radius zero}
+{Jagiellonian University}
+{Consider a maximally degenerate family of Calabi-Yau varieties over a punctured disk. A version of the SYZ conjecture predicts, roughly speaking, that the Gromov-Hausdorff limit of the fibers is an affine manifold $B$ with singularities in codimension 2; and sufficiently close to this limit, the fibers admit a special Lagrangian torus fibration over $B$. It is then expected that dualizing such a fibration one gets mirror Calabi-Yau varieties.
+In my talk, I will explain how to construct Lagrangian torus fibrations which, in some sense, approximate the conjectured ones. They emerge naturally ``at radius zero'', i.e.\ at the boundary of the A'Campo space, extending the given family from the punctured disk to the annulus. This is joint work with J. F. de Bobadilla.
+}
+
+
+\AbstractEntry
+{Guillermo Peñafort Sanchis}
+{TBA}
+{Universitat de València}
+{}
+
+
+\AbstractEntry
+{Patrick Popescu-Pampu}
+{Handles on complex links and vanishing cycles}
+{Université de Lille}
+{I will present joint work with Pablo Portilla Cuadrado. Consider a germ $(X,0)$ of complex analytic variety with isolated singularity. We look at the Milnor fibers $M_f$ of germs $f$ of holomorphic functions on $(X,0)$ without critical points in a pointed neighborhood of $0$. By definition, the complex link $L_X$ of $(X,0)$ is the Milnor fiber of a generic element of the maximal ideal of the local ring of $(X,0)$. Building on and generalizing results of Milnor, L\^e, Perron, Siersma, and Tib\u{a}r, we show that $M_f$ can be obtained from $L_X$ by attaching handles. Our main contribution is to identify these handles geometrically: their core balls extend inside $L_X$ to quadratic vanishing cycles associated with Morsifications of $f$ on $X$.}
+
+
+\AbstractEntry
+{Antoni Rangachev}
+{Topological equisingularity for families of curves}
+{Institute of Mathematics and Informatics, Bulgarian Academy of Sciences}
+{I will show that the Milnor number of a reduced curve is a Zariski upper semicontinuous invariant. As an application I will prove that the constancy of the Milnor number in a family of reduced curves is equivalent to topological equisingularity. This is joint work with Bengus-Lasnier and Gaffney.}
+
+\clearpage
+\phantomsection
+\subsection*{Contributed talks}
+\addcontentsline{toc}{section}{Contributed talks}
+
+\AbstractEntryHere
+{Tom Biesbrouck}
+{Birational Zeta Functions}
+{KU Leuven}
+{The motivic zeta function is a classical and rich invariant in singularity theory. In this talk, I will report on joint work with N. Budur, J. Nicaise and W. Veys where we define a birational analog of the motivic zeta function of a reduced polynomial in terms of minimal models. It admits an intrinsic meaning in terms of contact loci of arcs, an analog of a result of Denef and Loeser in the motivic case. We show that for local plane curve singularities the poles of the birational zeta function essentially coincide with the poles of the motivic zeta function.}
+
+
+\AbstractEntry
+{João Cabral}
+{Computational decomposition of minimal polynomial for quasi-ordinary hypersurface branch truncation}
+{Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa}
+{In this talk, we introduce a computational algorithm for decomposing irreducible quasi-ordinary hypersurfaces defined by a minimal polynomial $f$ and a branch $\zeta$ with $s$ characteristic exponents. Our approach begins by truncating $\zeta$ into a sequence $\widetilde{\zeta}_1, \widetilde{\zeta}_2, \dots, \widetilde{\zeta}_s$, where each $\widetilde{\zeta}_i$ retains the first $i$ characteristic exponents and defines a hypersurface $Y_i$ with minimal polynomial $f_i$. We prove that for every $i$ and $j$ satisfying $1 \leq i < s-1$ and $i+1 \leq j \leq s$, the polynomial $f_i$ is an $i$‑semi-root of $f_j$, and we establish support properties of each $f_i$. The algorithm leverages both the semigroup structure and the support of the involved polynomials through an iterative elimination process. Our results provide a systematic framework for the semi-root decomposition of a truncated quasi-ordinary branch. This talk is based on joint work with Ana Casimiro, accepted for publication in Experimental Mathematics.
+}
+
+
+\AbstractEntry
+{Vicente Monreal}
+{Canonical and functorial stratifications of singularities in
+   characteristic 0}
+{HHU Düsseldorf}
+{In this talk we will discuss existence of canonical and functorial stratifications of singularities in characteristic 0. The stratifications to be presented, called riso-stratifications, were introduced in local contexts by Bradley-Williams and Halupczok using non-archimedean and model-theoretic methods. Recent work proved that they are embedding independent and can be computed étale locally, upgrading their construction into a canonical and functorial stratification process that works for schemes of finite type over fields of characteristic 0. We will also discuss a first algebraic obstruction for these stratifications and a conjecture aimed at giving a positive answer to the question of compatibility with classical resolution of singularities in characteristic 0.}
+
+
+
+
+
+
+\end{document}
