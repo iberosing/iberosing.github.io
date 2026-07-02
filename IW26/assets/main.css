@@ -349,7 +349,8 @@ main,
     overflow: hidden;
 }
 
-.registration-banner-button {
+.registration-banner-button,
+.registration-banner {
     display: block;
     border: 2px solid transparent;
     border-radius: var(--radius-sm);
@@ -365,7 +366,8 @@ main,
     text-decoration: none;
 }
 
-.registration-banner-button img {
+.registration-banner-button img,
+.registration-banner img {
     display: block;
     width: 100%;
     height: auto;
